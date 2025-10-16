@@ -1,0 +1,19 @@
+package com.tp.dao;
+
+import java.util.List;
+
+/**
+ * @author radouane
+ **/
+public interface IDao<T> {
+
+    boolean create(T o);
+
+    boolean delete(T o);
+
+    boolean update(T o);
+
+    T findById(int id);
+
+    List<T> findAll();
+}
